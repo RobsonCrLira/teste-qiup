@@ -1,0 +1,12 @@
+{
+  "name": "qipu",
+  "version": "1.0.0",
+  "description": "Teste tecnico do processo seletivo da Qipu",
+  "main": "index.js",
+  "author": "Robson Cristian de Lira",
+  "license": "MIT",
+  "dependencies": {
+    "extenso": "^2.0.1",
+    "jest": "^26.6.3"
+  }
+}
