@@ -1,10 +1,6 @@
 from num2words import num2words
 
 
-def converterParaExtenso(valor):
-    return num2words(valor, lang='pt_BR', to='currency')
-
-
 def lerArquivo(path):
     arquivo = open(path, 'r')
     criaArray = []
@@ -13,12 +9,13 @@ def lerArquivo(path):
     arquivo.close()
     return criaArray
 
-
 def criaArquivo(path, arrayExtenso):
     arquivo = open(path, 'w')
     for line in arrayExtenso:
         arquivo.write(line)
 
+def converterParaExtenso(valor):
+    return num2words(valor, lang='pt_BR', to='currency')
 
 def verificaValor(valor):  # falta verificar letras
     if len(valor.split(',')) == 2 and (valor.find(',')):
